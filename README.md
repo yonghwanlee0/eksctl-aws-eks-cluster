@@ -24,6 +24,21 @@ kubectl get pods -n cert-manager
 
 kubectl get nodes
 
+# Deploying an application to your EKS cluster
+
+kubectl apply -f namespace.yaml
+
+kubectl get ns
+
+kubectl apply -f deployment.yaml
+
+kubectl get deploy -n staging
+
+kubectl apply -f service.yaml
+
+kubectl get all -n staging
+
+
 # Delete Cluster
 
 eksctl delete cluster --name aws-eks
